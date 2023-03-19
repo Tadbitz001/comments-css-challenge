@@ -1,0 +1,61 @@
+
+.divContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 1rem;
+    background-color: white;
+    width: 750px;
+    height: 170px;
+    border-radius: 10px;
+    grid-template-columns: 50px 50px 75px 75px 50px 50px;
+    grid-template-rows: 100px 100px; 
+
+
+}
+
+.
+
+.divContainer div {
+    gap: 1rem;
+}
+
+.plusMinusbox {
+    width: 34px;
+    height: 85px;
+    border-radius: 9px;
+    background-color: lightgray;
+    /* margin-left: 15px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.comment {
+    width: 600px;
+    
+}
+.plus {
+    align-items: center;
+}
+
+body {
+    background-color: lightgray;
+    font-size: 16px;
+}
+
+#juliusImage, #ramsesImage, #maxImage, #amyImage {
+    height: 3%;
+    width: 3%;
+}
+
+
+
+
+
+
+
+
