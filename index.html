@@ -24,50 +24,122 @@
 <body>
 
   <!-- Comment #1 -------------------------------------->
-<div class="divContainer">
-  <div class="plusMinusbox">
-  <div class="plus"><svg width="11" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/></svg> </div>
-  <div class="rating"> 12 </div>
-  <div class="minus" > <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg"><path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/></svg></div>
-  </div>
-  <div class="avatar" id="amyImage"><img src="./images/avatars/image-amyrobson.png" alt="profile" /></div>
-  <div class="name">amyrobson </div>
-  <div class="date">1 month ago</div>
-  <div class="replySymbol"> <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg></div>
-  <div class="reply">Reply</div>
-  <div class="comment">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
+  <div class="wrapper">
+    <div class="divContainer">
+      <div class="plusMinusbox">
+          <button class="plusBtn"><img src="./images/icon-plus.svg" alt="plus"></button>
+          <p class="num"> 12 </p>
+          <button class="minusBtn"><img src="./images/icon-minus.svg" alt="minus"></button>
+      </div>
+      <div class="postWrapper">
+        <div class="postHeader">
+          <div class="userProfile" >
+            <img class="images" id="image1" src="./images/avatars/image-amyrobson.png" alt="profile" />
+            <p class="user" id="user1">amyrobson </p>
+            <p class="date" id="date1">1 month ago</p>
+          </div>
+  
+          <div class="replySymbol"> 
+            <button class="reply"><img src="./images/icon-reply.svg" alt="reply">Reply</button>
+          </div>
+        </div>
 
+        <div class="comment">
+          <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Comment #2 -->
+    <div class="divContainer">
+      <div class="plusMinusbox">
+          <button class="plusBtn"><img src="./images/icon-plus.svg" alt="plus"></button>
+          <p class="num"> 5 </p>
+          <button class="minusBtn"><img src="./images/icon-minus.svg" alt="minus"></button>
+      </div>
+      <div class="postWrapper">
+        <div class="postHeader">
+          <div class="userProfile" >
+            <img class="images" id="image2" src="./images/avatars/image-maxblagun.png" alt="profile" />
+            <p class="user" id="user2">maxblagun </p>
+            <p class="date" id="date2">2 weeks ago</p>
+          </div>
+  
+          <div class="replySymbol"> 
+            <button class="reply"><img src="./images/icon-reply.svg" alt="reply">Reply</button>
+          </div>
+        </div>
 
-</div>
+        <div class="comment">
+          <p>Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- Comment #2 -->
-  5
-  <img id="maxImage" src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-</div>
-  <!-- Comment #3 (Reply to comment #2) -->
-  <div>
-  4
-  <img id="ramsesImage" src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-</div>
-<div>
-  <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img id="juliusImage" src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-</div>
+    <!-- Comment #3 (Reply to comment #2) -->
+    <div class="divContainer2">
+      <div class="plusMinusbox">
+          <button class="plusBtn"><img src="./images/icon-plus.svg" alt="plus"></button>
+          <p class="num"> 4 </p>
+          <button class="minusBtn"><img src="./images/icon-minus.svg" alt="minus"></button>
+      </div>
+      <div class="postWrapper">
+        <div class="postHeader">
+          <div class="userProfile" >
+            <img class="images" id="image3" src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+            <p class="user" id="user3">ramsesmiron </p>
+            <p class="date" id="date3">1 week ago</p>
+          </div>
+  
+          <div class="replySymbol"> 
+            <button class="reply"><img src="./images/icon-reply.svg" alt="reply">Reply</button>
+          </div>
+        </div>
+
+        <div class="comment">
+          <p>@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comment #4 (Reply to comment #2) -->
+    <div class="divContainer2">
+      <div class="plusMinusbox">
+          <button class="plusBtn"><img src="./images/icon-plus.svg" alt="plus"></button>
+          <p class="num"> 2 </p>
+          <button class="minusBtn"><img src="./images/icon-minus.svg" alt="minus"></button>
+      </div>
+      <div class="postWrapper">
+        <div class="postHeader">
+          <div class="userProfile" >
+            <img class="images" id="image4" src="./images/avatars/image-juliusomo.png" alt="profile" />
+            <p class="user" id="user4">juliusomo </p>
+            <p class="date" id="date4">2 days ago</p>
+          </div>
+  
+          <div class="replySymbol"> 
+            <button class="reply"><img src="./images/icon-reply.svg" alt="reply">Reply</button>
+          </div>
+        </div>
+
+        <div class="comment">
+          <p>@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inputContainer" >
+      <img class="imagesJulius" id="image5" src="./images/avatars/image-juliusomo.png" alt="profile"/>
+      <textarea name="comment" placeholder="Add a comment" id="commentInput"></textarea>
+      <button id="sendBtn">SEND</button>
+    </div>
+
 
   
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution">
+      Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
-</body>
+</body> -->
 </html>
